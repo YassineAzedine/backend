@@ -28,5 +28,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: |
-        sudo pm2 restart backend || echo "PM2 process 'backend' not found."
+        sudo pm2 restart app || echo "PM2 process 'app' not found."
   
